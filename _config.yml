@@ -1,0 +1,42 @@
+# Jekyll
+timezone: Asia/Tokyo
+encoding: UTF-8
+
+future: false
+show_drafts: false
+
+exclude:
+  # general repository files
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - CNAME
+  # IntelliJ
+  - .idea
+  # Docker
+  - docker-compose.yml
+  - Dockerfile
+  # Ruby
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+markdown: kramdown
+
+url: https://1st.natorisana.love
+kramdown:
+  input: GFM
+
+# Plugins
+theme:
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Plugins Config
+## common
+title: 名取さな 1周年記念 ファンサイト
+description: >
+  名取さな デビュー1周年記念 のファンサイト

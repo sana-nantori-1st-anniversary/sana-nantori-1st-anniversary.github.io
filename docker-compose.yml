@@ -1,0 +1,14 @@
+version: "3"
+services:
+  build-backend:
+    image: sanabutton2/github-pages
+    volumes:
+      - ./:/usr/src/app
+    command: jekyll build --watch --force_polling --trace
+  
+  server:
+    image: httpd:alpine
+    volumes:
+      - ./_site/:/usr/local/apache2/htdocs
+    ports:
+      - 4000:80
