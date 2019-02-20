@@ -1,0 +1,14 @@
+# role ごとにわけるけれど、とりあえず仮置きで `a_member:`
+a_member:
+  - name: しとりー
+    tw: ndxbn
+  - name: みんと
+    tw: minto1020
+  - name: naporitan
+    tw: naporin24690
+  - name: ユーン
+    tw: euxn24
+  - name: さいれず
+    tw: Psyles_ota37
+  - name: forno
+    tw: forno_recsys

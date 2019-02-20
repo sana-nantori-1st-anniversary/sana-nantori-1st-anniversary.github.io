@@ -1,3 +1,15 @@
 ---
 layout: default
 ---
+
+<h2>参加者一覧</h2>
+
+<ul>
+  {% for account in site.data.member.a_member %}
+  <li>
+    {% if account.tw %}
+    <a href="https://twitter.com/{{account.tw}}">{{account.name}}</a> {% else %}
+    {{account.name}} {% endif %}
+  </li>
+  {% endfor %}
+</ul>
