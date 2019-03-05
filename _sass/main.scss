@@ -1,15 +1,43 @@
-h1 {
-  font-size: 2em;
-  margin: 0.5em;
+h2 {
+  display: block;
+  background-color: #ff88ff;
   text-align: center;
 }
 
-header {
-  background-color: #ffdde5;
-  padding: 10px;
+%main-body {
+  padding: 5px
 }
 
-.access-counter {
-  text-align: right;
-  margin-right: 26px;
+#gallery {
+  @extend %main-body;
+  max-width: calc(100% - 280px);
+  min-width: 190px;
+  // each content card size is 180px + margin 5px*2
+}
+
+#contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#menu {
+  @extend %main-body;
+  max-width: 280px;
+  width: 33%;
+}
+
+%content {
+  margin: 5px;
+}
+
+.content-card {
+  @extend %content;
+  background: #ff88ff;
+  height: 180px;
+  width: 180px;
+}
+
+nav {
+  @extend %content;
 }
