@@ -6,7 +6,7 @@
 #  music の場合は、ミュージックプレイヤーが表示される HTMLタグ（音雲なら iframe）
 #  text の場合は、テキストファイルの URL
 #  game の場合は、Playable なゲームの HTML Element （iframe になるかな…？）
-a_member:
+member:
   - name: しとりー
     tw: ndxbn
     content_type: web
