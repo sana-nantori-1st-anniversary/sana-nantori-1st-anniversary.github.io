@@ -1,9 +1,33 @@
 # role ごとにわけるけれど、とりあえず仮置きで `a_member:`
+# 下に行くほど、投稿が日時が新しい
+# content_type: "illus" | "music" | "text" | "game" | "web"
+# content
+#  illus の場合は、画像の URL
+#  music の場合は、ミュージックプレイヤーが表示される HTMLタグ（音雲なら iframe）
+#  text の場合は、テキストファイルの URL
+#  game の場合は、Playable なゲームの HTML Element （iframe になるかな…？）
 a_member:
   - name: しとりー
     tw: ndxbn
+    content_type: web
+  - name: 菊池アクト
+    tw: Lion_Airis
+    content_type: music
+    content: xxx
+  - name: AVERU
+    tw: _averu_
+    content_type: illus
   - name: みんと
     tw: minto1020
+    content_type: text
+  - name: ずま
+    tw: zuma_vt_2
+    content_type: text
+  - name: み湖畔
+    tw: mgjpdGj
+    content_type: illus
+
+# 以下、まだ投稿されてないけれど、参加表明されているせんせえ方
   - name: naporitan
     tw: naporin24690
   - name: ユーン
@@ -18,11 +42,6 @@ a_member:
     tw: aizsaturiku
   - name: 無音
     tw: Yobarazu
-illust:
   - name: すちーむ🍆
     tw: steam0315
-  - name: AVERU
-    tw: _averu_
-music:
-  - name: 菊池アクト
-    tw: Lion_Airis
+    content_type: illus
