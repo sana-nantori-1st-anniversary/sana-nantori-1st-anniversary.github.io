@@ -6,42 +6,44 @@
 #  music の場合は、ミュージックプレイヤーが表示される HTMLタグ（音雲なら iframe）
 #  text の場合は、テキストファイルの URL
 #  game の場合は、Playable なゲームの HTML Element （iframe になるかな…？）
-member:
-  - name: しとりー
-    tw: ndxbn
-    content_type: web
-  - name: 菊池アクト
-    tw: Lion_Airis
-    content_type: music
-    content: xxx
-  - name: AVERU
-    tw: _averu_
-    content_type: illus
-  - name: みんと
-    tw: minto1020
-    content_type: text
-  - name: ずま
-    tw: zuma_vt_2
-    content_type: text
-  - name: み湖畔
-    tw: mgjpdGj
-    content_type: illus
-
+- name: しとりー
+  tw: ndxbn
+  content_type: web
+  content: この Web サイトを作りました。
+- name: 菊池アクト
+  tw: Lion_Airis
+  content_type: music
+  content: <audio src="https://1st.natorisana.love/asset/Lion_Airis/Virtual%20Nurse%20(8bit%20Version).wav" controls></audio>
+- name: AVERU
+  tw: _averu_
+  content_type: illus
+  # GitHub Pages 経由だと、アクセスできない…
+  content: https://raw.githubusercontent.com/sana-nantori-1st-anniversary/asset/master/_averu/%E5%90%8D%E5%8F%96%E3%81%95%E3%81%AA001_2.png
+- name: みんと
+  tw: minto1020
+  content_type: text
+- name: ずま
+  tw: zuma_vt_2
+  content_type: text
+- name: み湖畔
+  tw: mgjpdGj
+  content_type: illus
+  content: https://1st.natorisana.love/asset/mgjpdGj/NatoriSana_1th_AA_Gif.gif
 # 以下、まだ投稿されてないけれど、参加表明されているせんせえ方
-  - name: naporitan
-    tw: naporin24690
-  - name: ユーン
-    tw: euxn23
-  - name: さいれず
-    tw: Psyles_ota37
-  - name: forno
-    tw: forno_recsys
-  - name: ぽど
-    tw: jojohanibuha
-  - name: きらーましん
-    tw: aizsaturiku
-  - name: 無音
-    tw: Yobarazu
-  - name: すちーむ🍆
-    tw: steam0315
-    content_type: illus
+- name: naporitan
+  tw: naporin24690
+- name: ユーン
+  tw: euxn23
+- name: さいれず
+  tw: Psyles_ota37
+- name: forno
+  tw: forno_recsys
+- name: ぽど
+  tw: jojohanibuha
+- name: きらーましん
+  tw: aizsaturiku
+- name: 無音
+  tw: Yobarazu
+- name: すちーむ🍆
+  tw: steam0315
+#  content_type: illus
