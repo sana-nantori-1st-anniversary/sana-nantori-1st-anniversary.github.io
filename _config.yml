@@ -2,8 +2,10 @@
 timezone: Asia/Tokyo
 encoding: UTF-8
 
-future: false
-show_drafts: false
+future: true
+show_drafts: true
+
+permalink: /text/:title.html
 
 exclude:
   # general repository files
