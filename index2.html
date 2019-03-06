@@ -16,7 +16,7 @@ layout: gallery
             {%- when 'text' -%}
             <div class="content content--text">クリックしたらモーダルで開くやつをつくる</div>
             {%- when 'game' -%}
-            <iframe class="content content-game" src="{{ member.content }}" frameborder="1"></iframe>
+            <a href="/game/{{ member.tw }}"><img class="content content--image" src="/game/{{ member.tw }}/screen-shot.png" alt="{{ member.name }} せんせえが投稿したゲームのスクリーンショット"></a>
             {%- when 'web' -%}
             <div class="content content--text">{{member.content}}</div>
             {%- endcase -%}

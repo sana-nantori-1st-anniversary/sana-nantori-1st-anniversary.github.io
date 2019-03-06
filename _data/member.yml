@@ -5,7 +5,7 @@
 #  illus の場合は、画像の URL
 #  music の場合は、ミュージックプレイヤーが表示される HTMLタグ（音雲なら iframe）
 #  text の場合は、テキストファイルの URL
-#  game の場合は、Playable なゲームの HTML Element （iframe になるかな…？）
+#  game の場合は、自動生成なので、特になし。
 - name: しとりー
   tw: ndxbn
   content_type: web
@@ -29,6 +29,9 @@
   tw: mgjpdGj
   content_type: illus
   content: https://1st.natorisana.love/asset/mgjpdGj/NatoriSana_1th_AA_Gif.gif
+- name: 寝落ち🍆
+  tw: zuho_cpp
+  content_type: game
 # 以下、まだ投稿されてないけれど、参加表明されているせんせえ方
 - name: naporitan
   tw: naporin24690
