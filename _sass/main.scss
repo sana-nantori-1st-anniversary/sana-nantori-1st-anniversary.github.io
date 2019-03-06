@@ -14,6 +14,7 @@
   @extend %main-body;
   max-width: calc(100% - 280px);
   min-width: 190px;
+  width: 67%;
   // each content card size is 180px + margin 5px*2
 }
 
