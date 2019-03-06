@@ -1,3 +1,18 @@
 ---
-layout: default
+layout: gallery
 ---
+<h2 class="contents-header">画像・イラスト</h2>
+<div id="contents">
+    {%- for member in site.data.member reversed -%}
+    {%- if member.content_type -%}
+    {%- if member.content_type == 'illus' -%}
+    <div class="content-card">
+        <h3 class="content-header"><a href="https://twitter.com/{{ member.tw }}">{{ member.name }}</a></h3>
+        <div style="padding: 5px;">
+            <img class="content content--image" src="{{ member.content }}" alt="{{ member.name }} せんせえが投稿した画像">
+        </div>
+    </div>
+    {%- endif -%}
+    {%- endif -%}
+    {%- endfor -%}
+</div>

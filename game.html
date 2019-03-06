@@ -1,3 +1,18 @@
 ---
-layout: default
+layout: gallery
 ---
+<h2 class="contents-header">新着</h2>
+<div id="contents">
+    {%- for member in site.data.member reversed -%}
+    {%- if member.content_type -%}
+    {%- if member.content_type == 'game'  -%}
+    <div class="content-card" {%- if member.content_type == 'music' -%} style="width:360px;" {%- endif -%}>
+        <h3 class="content-header"><a href="https://twitter.com/{{ member.tw }}">{{ member.name }}</a></h3>
+        <div style="padding: 5px;">
+            <a href="/game/{{ member.tw }}"><img class="content content--image" src="https://raw.githubusercontent.com/sana-nantori-1st-anniversary/game/master/{{ member.tw }}/screen-shot.png" alt="{{ member.name }} せんせえが投稿したゲームのスクリーンショット"></a>
+        </div>
+    </div>
+    {%- endif -%}
+    {%- endif -%}
+    {%- endfor -%}
+</div>

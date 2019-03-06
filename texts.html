@@ -1,3 +1,18 @@
 ---
-layout: default
+layout: gallery
 ---
+<h2 class="contents-header">新着</h2>
+<div id="contents">
+    {%- for member in site.data.member reversed -%}
+    {%- if member.content_type -%}
+    {%- if member.content_type == 'text'-%}
+    <div class="content-card">
+        <h3 class="content-header"><a href="https://twitter.com/{{ member.tw }}">{{ member.name }}</a></h3>
+        <div style="padding: 5px;">
+            <div class="content content--text">クリックしたらモーダルで開くやつをつくる</div>
+        </div>
+    </div>
+    {%- endif -%}
+    {%- endif -%}
+    {%- endfor -%}
+</div>
