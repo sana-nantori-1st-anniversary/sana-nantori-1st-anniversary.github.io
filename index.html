@@ -5,23 +5,29 @@ layout: gallery
 <div id="contents">
     {%- for member in site.data.member reversed -%}
     {%- if member.content_type -%}
+
     <div class="content-card" {%- if member.content_type == 'music' -%} style="width:360px;" {%- endif -%}>
-    <h3 class="content-header"><a href="https://twitter.com/{{ member.tw }}">{{ member.name }}</a></h3>
-    <div style="padding: 5px;">
-        {%- case member.content_type -%}
-        {%- when 'illus'-%}
-        <img class="content content--image" src="{{ member.content }}" alt="{{ member.name }} せんせえが投稿した画像">
-        {%- when 'music' -%}
-        {{ member.content }}
-        {%- when 'text' -%}
-        <div class="content content--text"><a href="/text/{{ member.tw}}.html">{{member.tw}}.txt</a></div>
-        {%- when 'game' -%}
-        <a href="/game/{{ member.tw }}"><img class="content content--image" src="https://raw.githubusercontent.com/sana-nantori-1st-anniversary/game/master/{{ member.tw }}/screen-shot.png" alt="{{ member.name }} せんせえが投稿したゲームのスクリーンショット"></a>
-        {%- when 'web' -%}
-        <div class="content content--text">{{member.content}}</div>
-        {%- endcase -%}
+
+        {%- if member.content_type != 'tweed' -%}
+        <h3 class="content-header"><a href="https://twitter.com/{{ member.tw }}">{{ member.name }}</a></h3>
+        {%- endif-%}
+        <div style="padding: 5px;">
+            {%- case member.content_type -%}
+            {%- when 'illus'-%}
+            <img class="content content--image" src="{{ member.content }}" alt="{{ member.name }} せんせえが投稿した画像">
+            {%- when 'music' -%}
+            {{ member.content }}
+            {%- when 'text' -%}
+            <div class="content content--text"><a href="/text/{{ member.tw}}.html">{{member.tw}}.txt</a></div>
+            {%- when 'game' -%}
+            <a href="/game/{{ member.tw }}"><img class="content content--image" src="https://raw.githubusercontent.com/sana-nantori-1st-anniversary/game/master/{{ member.tw }}/screen-shot.png" alt="{{ member.name }} せんせえが投稿したゲームのスクリーンショット"></a>
+            {%- when 'tweed' -%}
+            <div class="content content--tweed">{{member.content}}</div>
+            {%- when 'web' -%}
+            <div class="content content--text">{{member.content}}</div>
+            {%- endcase -%}
+        </div>
     </div>
-</div>
 {%- endif -%}
 {%- endfor -%}
 </div>

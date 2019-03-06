@@ -1,10 +1,13 @@
 # role ごとにわけるけれど、とりあえず仮置きで `a_member:`
 # 下に行くほど、投稿が日時が新しい
-# content_type: "illus" | "music" | "text" | "game" | "web"
+# name: 表示名。content_type が tweed 以外なら必須
+# tw: ツイッターの SN 。content_type が tweed 以外なら必須
+# content_type: "illus" | "music" | "text" | "game" | "tweed" | "web"
 # content
 #  illus の場合は、画像の URL
 #  music の場合は、プレイヤーが表示される HTMLタグ（音雲なら iframe）
 #  text の場合は、テキストファイルの URL
+#  tweed の場合は、埋め込みコード
 #  game の場合は、自動生成なので、特になし。
 - name: しとりー
   tw: ndxbn
@@ -36,6 +39,15 @@
 - name: 寝落ち🍆
   tw: zuho_cpp
   content_type: game
+- content_type: tweed
+  content: |
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/%E7%89%87%E6%A1%90%E6%97%A9%E8%8B%97%E7%94%9F%E8%AA%95%E7%A5%AD2019?src=hash&amp;ref_src=twsrc%5Etfw">#片桐早苗生誕祭2019</a> <a href="https://twitter.com/hashtag/%E5%90%8D%E5%8F%96%E3%81%95%E3%81%AA1%E5%91%A8%E5%B9%B4?src=hash&amp;ref_src=twsrc%5Etfw">#名取さな1周年</a> <br>タグ付しかできなくて申し訳ない…<br>心の中では祝っているのでお許しを…</p>&mdash; 苺ざるそば (@THERUSOBA114514) <a href="https://twitter.com/THERUSOBA114514/status/1103422595653722112?ref_src=twsrc%5Etfw">March 6, 2019</a></blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+- content_type: tweed
+  content: |
+    <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">名取すげぇな<br>リスナーだけでなく、たくさんのVの者から愛されてるんやな<br>お誕生日おめでとう！<a href="https://twitter.com/hashtag/%E5%90%8D%E5%8F%96%E3%81%95%E3%81%AA?src=hash&amp;ref_src=twsrc%5Etfw">#名取さな</a> <a href="https://twitter.com/hashtag/%E5%90%8D%E5%8F%96%E3%81%95%E3%81%AA1%E5%91%A8%E5%B9%B4?src=hash&amp;ref_src=twsrc%5Etfw">#名取さな1周年</a></p>&mdash; やーー🌖🔔 (@unknown0845) <a href="https://twitter.com/unknown0845/status/1103424798640623617?ref_src=twsrc%5Etfw">March 6, 2019</a></blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 # 以下、まだ投稿されてないけれど、参加表明されているせんせえ方
 - name: naporitan
   tw: naporin24690
