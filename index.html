@@ -1,6 +1,27 @@
-作るところ見てて…
-
-<!--
-公開日は3月7日です。
-誕生日 兼 Virtual YouTuber デビュー1周年 記念です。 VTuber デビュー日は、最初のツイートをした日（2/28）と最初の動画投稿をした日（3/16）とで、どちらにすべきみたいなのが諸説あるので、誕生日に合わせます。
--->
+---
+layout: gallery
+---
+<h2 class="contents-header">新着</h2>
+<div id="contents">
+    {%- for member in site.data.member reversed -%}
+    {%- if member.content_type -%}
+    <div class="content-card" {%- if member.content_type == 'music' -%} style="width:360px;" {%- endif -%}>
+    <h3 class="content-header"><a href="https://twitter.com/{{ member.tw }}">{{ member.name }}</a></h3>
+    <div style="padding: 5px;">
+        {%- case member.content_type -%}
+        {%- when 'illus'-%}
+        <img class="content content--image" src="{{ member.content }}" alt="{{ member.name }} せんせえが投稿した画像">
+        {%- when 'music' -%}
+        {{ member.content }}
+        {%- when 'text' -%}
+        <div class="content content--text"><a href="/text/{{ member.tw}}.html">{{member.tw}}.txt</a></div>
+        {%- when 'game' -%}
+        <a href="/game/{{ member.tw }}"><img class="content content--image" src="https://raw.githubusercontent.com/sana-nantori-1st-anniversary/game/master/{{ member.tw }}/screen-shot.png" alt="{{ member.name }} せんせえが投稿したゲームのスクリーンショット"></a>
+        {%- when 'web' -%}
+        <div class="content content--text">{{member.content}}</div>
+        {%- endcase -%}
+    </div>
+</div>
+{%- endif -%}
+{%- endfor -%}
+</div>
