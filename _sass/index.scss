@@ -9,9 +9,17 @@ header {
   padding: 10px;
 }
 
-.access-counter {
-  text-align: right;
-  margin-right: 26px;
+.header__2nd-level {
+  display: flex;
+
+  &__description {
+    width: calc(100% - 182px);
+    min-width: 320px;
+  }
+
+  &__access-counter {
+    width: 182px;
+  }
 }
 
 main {
