@@ -38,12 +38,13 @@
   @extend %content;
   //background: #ff88ff;
   border: 1px solid;
-  height: 180px;
-  width: 180px;
+  height: 360px;
+  width: 360px;
   text-align: center;
 }
 
 .content-header {
+  display: block;
   padding: 0.2em 0;
 }
 
@@ -52,13 +53,13 @@
 
 .content--image {
   background-color: lightgray;
-  max-height: 130px;
-  max-width: 170px;
+  max-height: 328px;
+  max-width: 338px;
 }
 
 .content--text {
   //background-color: skyblue;
   border: 1px solid;
-  height: 128px;
-  width: 168px;
+  height: 328px;
+  width: 348px;
 }
