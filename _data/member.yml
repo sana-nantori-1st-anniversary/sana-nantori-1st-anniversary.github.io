@@ -20,7 +20,7 @@
 - name: 菊池アクト
   tw: Lion_Airis
   content_type: music
-  content: <iframe width="366" height="161" src="https://www.youtube.com/embed/KcyZKc87mYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  content: <iframe width="320" height="200" src="https://www.youtube.com/embed/KcyZKc87mYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - name: AVERU
   tw: _averu_
   content_type: illus
