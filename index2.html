@@ -16,7 +16,7 @@ layout: gallery
             {%- when 'text' -%}
             <div class="content content--text">クリックしたらモーダルで開くやつをつくる</div>
             {%- when 'game' -%}
-            <a href="/game/{{ member.tw }}"><img class="content content--image" src="/game/{{ member.tw }}/screen-shot.png" alt="{{ member.name }} せんせえが投稿したゲームのスクリーンショット"></a>
+            <a href="/game/{{ member.tw }}"><img class="content content--image" src="https://raw.githubusercontent.com/sana-nantori-1st-anniversary/game/master/{{ member.tw }}/screen-shot.png" alt="{{ member.name }} せんせえが投稿したゲームのスクリーンショット"></a>
             {%- when 'web' -%}
             <div class="content content--text">{{member.content}}</div>
             {%- endcase -%}
