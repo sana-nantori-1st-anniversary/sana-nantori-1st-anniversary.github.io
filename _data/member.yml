@@ -3,7 +3,7 @@
 # content_type: "illus" | "music" | "text" | "game" | "web"
 # content
 #  illus の場合は、画像の URL
-#  music の場合は、ミュージックプレイヤーが表示される HTMLタグ（音雲なら iframe）
+#  music の場合は、プレイヤーが表示される HTMLタグ（音雲なら iframe）
 #  text の場合は、テキストファイルの URL
 #  game の場合は、自動生成なので、特になし。
 - name: しとりー
@@ -14,6 +14,10 @@
   tw: Lion_Airis
   content_type: music
   content: <audio src="https://1st.natorisana.love/asset/Lion_Airis/Virtual%20Nurse%20(8bit%20Version).wav" controls></audio>
+- name: 菊池アクト
+  tw: Lion_Airis
+  content_type: music
+  content: <iframe width="1463" height="643" src="https://www.youtube.com/embed/KcyZKc87mYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 - name: AVERU
   tw: _averu_
   content_type: illus
